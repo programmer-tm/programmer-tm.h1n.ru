@@ -1,0 +1,126 @@
+body{
+	background-color: black;
+}
+
+.container {
+	position: fixed;
+	display: table;
+	top: 0;
+	left: 0;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	min-height: 100vh;
+	color: white;
+	display: flex;
+	flex-direction: column;
+}
+
+.head{
+	font-family: 'Pacifico', cursive;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 7vh;
+	background-color: gray;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.head_logo{
+	margin-left: 4vh;
+}
+.head_menu{
+	margin-right: 4vh;
+}
+
+a{
+	color: white;
+}
+
+a:hover {
+	color: yellowgreen;
+	text-shadow: none;
+}
+
+a:active {
+	color: red;
+	text-shadow: 0px 1px 2px white, 5px 5px 5px red;
+}
+
+.body{
+	font-family: 'Pacifico', cursive;
+	font-size: 18px;
+	top: 7vh;
+	bottom: 5vh;
+	position: absolute;
+	height: 88vh;
+	overflow: auto;
+	/*text-shadow: 1.5px 1.5px 1.5px white, 7px 7px 7px white;
+	color: transparent;*/
+	color: white;
+	width: 100%;
+	text-align: center;
+}
+
+.body_admin{
+	position: absolute;
+	top: 7vh;
+	bottom: 5vh;
+	height: 88vh;
+	overflow: auto;
+	color:white;
+	width: 100%;
+	text-align: center;
+}
+
+.body_admin_block{
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+}
+.body_admin_table{
+	margin-bottom: 4vh;
+	margin: auto;
+}
+
+.footer{
+	height: 5vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: gray;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer_copy{
+	margin-left: 4vh;
+}
+
+.footer_links{
+	margin-right: 4vh;
+}
+
+.body_block{
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+}
+
+details {
+	display: inline;  /* текст на текущей строке */
+}
+details[open] {
+	display: contents;  /* спрятанный текст на текущей строке (в Google Chrome отсутствует реализация на момент написания статьи) */
+}
+details summary {
+	list-style-type: "Тебя нет на сайте? Регистрация!";  /* такие слова, как «Ещё», «Читать дальше», «Нажать» лучше вносить в list-style-type, чтобы они не были видны в браузерах, не поддерживающих тег details (в Google Chrome отсутствует реализация на момент написания статьи) */
+	color: white;
+	cursor: pointer;
+}
+details[open] summary {
+	list-style-type: "Регистрация:";
+}
